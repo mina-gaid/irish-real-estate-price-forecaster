@@ -1,4 +1,8 @@
-# Forecasting Irish house / real estate prices using Ordinary Least Squares-, XGBoost-, KNN-, Lasso-, Ridge-, Polynomial-, Random Forest-, and Neural Network MLP Regression (via scikit-learn)
+## Description 
+
+Forecasting Irish house / real estate prices using advanced machine learning.
+
+Forecasting Irish house / real estate prices using Ordinary Least Squares-, XGBoost-, KNN-, Lasso-, Ridge-, Polynomial-, Random Forest-, and Neural Network MLP Regression (via scikit-learn)
 
 ## Approach:
 
@@ -75,36 +79,18 @@
 
 #### Scatter plot - Surface vs. Asking Price (EUR)
 
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/Scatter.png)
-
 #### XGBoost - Predicted prices vs. True price (EUR)
-
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/XGB.png)
 
 #### Random Forest - Predicted prices vs. True price (EUR)
 
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/Forest.png)
-
 #### Polynomial - Predicted prices vs. True price (EUR)
-
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/Poly.png)
 
 #### Neural Network MLP - Predicted prices vs. True price (EUR)
 
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/MLP.png)
-
 #### KNN - Predicted prices vs. True price (EUR)
-
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/KNN.png)
 
 #### OLS - Predicted prices vs. True price (EUR)
 
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/OLS.png)
-
 #### Lasso - Predicted prices vs. True price (EUR)
 
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/Lasso.png)
-
 #### Ridge - Predicted prices vs. True price (EUR)
-
-![alt text](https://github.com/mina-gaid/irish-real-estate-price-forecaster/blob/master/plots/Ridge.png)
