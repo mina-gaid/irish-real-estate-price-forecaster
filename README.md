@@ -4,6 +4,8 @@ Forecasting Irish house / real estate prices using advanced machine learning.
 
 Forecasting Irish house / real estate prices using Ordinary Least Squares-, XGBoost-, KNN-, Lasso-, Ridge-, Polynomial-, Random Forest-, and Neural Network MLP Regression (via scikit-learn)
 
+---
+
 ## Approach:
 
 - load Pandas DataFrame containing (Dec-17) housing data, supplemented with longitude and latitude coordinates mapped to zip code (via [GeoPy](https://geopy.readthedocs.io/en/1.10.0/#)
@@ -16,13 +18,79 @@ Forecasting Irish house / real estate prices using Ordinary Least Squares-, XGBo
 - evaluate estimator performance by means of 5 fold 'shuffled' nested cross-validation
 - predict cross validated estimates of y for each data point and plot on scatter diagram vs true y
 
-## Packages required
+---
 
-- [Python 3.7.0](https://www.python.org/downloads/)
-- [Matplotlib](https://matplotlib.org/)
-- [Pandas](https://pandas.pydata.org/)
-- [Numpy](https://docs.scipy.org/doc/)
-- [scikit-learn](http://scikit-learn.org/stable/)
+# Development
+
+Developed using Python / Django,
+
+---
+
+## Developer Notes
+
+Please always use `pipenv install` instead of `pip3 install` when adding dependencies.
+
+Also ensure to keep the `requirements.txt` up-to-date by runnging the following command wheneve dependencies are added/removed.
+
+`$ pipenv lock -r > requirements.txt`
+
+---
+
+## Environment & Application setup
+
+Step 1: Download & install Python 3 -
+
+The easiest way to setup a Python Environment on Windows is to download Anaconda - https://www.anaconda.com/download/
+
+If on macOS, you can use `brew`
+
+To setup homebrew, open the terminal and run the command
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
+Then install Python by running the following command
+
+`$ brew install python`
+
+Step 2: Install Pipenv
+
+To setup & use isolated Virtual Environments, install pipenv
+
+`$ pip3 install pipenv`
+
+Step 3: Open the terminal & cd into project directory -
+
+`$ cd /path/to/project`
+
+Step 4: Activate/Create Virtual Environment
+
+`$ pipenv shell`
+
+Step 5: Run the following command to install all the dependencies -
+
+`$ pipenv install`
+
+Alternatively, you can run -
+
+`$ pip3 install -r requirements.txt`
+
+Step 6: Done!
+
+---
+
+## Run Locally:
+
+Step 1: Open the terminal & cd into project directory -
+
+`$ cd /path/to/project`
+
+Step 2: Run the following command to run the application -
+
+`$ python <script>.py`
+
+Done!
+
+---
 
 ## Scores (5 fold nested 'shuffled'cross-validation - Rsquared)
 
@@ -66,6 +134,8 @@ Forecasting Irish house / real estate prices using Ordinary Least Squares-, XGBo
 - Parameters: alpha 0.01
 - Score: 0.693
 
+---
+
 ### Sample data input (Pandas DataFrame)
 
 ```
@@ -76,6 +146,8 @@ Forecasting Irish house / real estate prices using Ordinary Least Squares-, XGBo
 3     92.0        5.0         1035     349511  52.416895   4.906767
 4    127.0        4.0         1013    1050000  52.396789   4.876607
 ```
+
+---
 
 #### Scatter plot - Surface vs. Asking Price (EUR)
 
